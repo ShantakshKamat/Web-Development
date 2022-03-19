@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+<h1>Race Registration!</h1>
+
+<form action="/myass">
+    <p>
+    <label for="first">First Name</label>
+    <input type="text" id="first" name="FirstName" required>
+    </p>
+
+    <p>
+    <label for="last">Last Name</label>
+    <input type="text" id="last" name="LastName" required>
+    </p>
+
+
+    <p>Select a Race:</p>
+
+    <p> 
+        <input type="radio" name="same" id="funrun" value="Funvalue">
+        <label for="funrun">Fun Run 5k</label>
+    </p>
+
+    <p>
+        <input type="radio" name="same" id="halfmar" value="halfvalue">
+        <label for="halfmar">Half Marathon</label>
+    </p>
+
+    <p> 
+        <input type="radio" name="same" id="fullmar" value="fullvalue">
+        <label for="fullmar">Full Marathon</label>
+    </p>
+
+
+
+    <div>
+        <label for="em">Email</label>
+        <input type="email" id="em" name="myemail" required>
+    </div>
+
+    <div>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="mypass"required>
+
+    </div>
+        
+<div>
+    <label for="division">Select Age Group</label>
+    <select name="division" id="division">
+        <option value="kids">under 18</option>
+        <option value="young">18-30</option>
+        <option value="adults">30-50</option>
+        <option value="seniors">50+</option>
+    </select>
+</div>
+
+<div>
+    <button>Register</button>
+</div>
+
+
+   
+</form>
+
+    
+</body>
+</html>
