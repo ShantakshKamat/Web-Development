@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/tacos"></form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+    <label for="vehicle1"> I have a bike</label><br />
+
+    <div>
+      <input type="radio" id="contactChoice1" name="contact" value="email" />
+      <label for="contactChoice1">Email</label>
+
+      <input type="radio" id="contactChoice2" name="contact" value="phone" />
+      <label for="contactChoice2">Phone</label>
+
+      <input type="radio" id="contactChoice3" name="contact" value="mail" />
+      <label for="contactChoice3">Mail</label>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+
+    <label for="pet-select">Choose a pet:</label>
+
+    <select name="pets" id="pet-select">
+      <option value="">--Please choose an option--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+    <div>
+      <input type="range" id="volume" name="volume" min="0" max="11" />
+      <label for="volume">Volume</label>
+    </div>
+
+    <label for="story">Tell us your story:</label>
+
+    <textarea id="story" name="story" rows="5" cols="33">
+It was a dark and stormy night...
+</textarea
+    >
+  </body>
+</html>
