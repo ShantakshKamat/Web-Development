@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#box").animate({ height: "200px", width: "200px" }, 1000);
+        });
+        $("#btn2").click(function () {
+          $("#box").stop().css({ height: "100px", width: "100px" });
+        });
+      });
+    </script>
+    <style>
+      #box {
+        background: #98bf21;
+        height: 100px;
+        width: 100px;
+        margin: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Animate height & width</button>
+    <button id="btn2">Reset</button>
+    <div id="box"></div>
+  </body>
+</html>

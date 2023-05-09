@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Page</title>
+  </head>
+  <body>
+    <h2 id="hello">Hello</h2>
+    <input type="text" id="input-box" />
+    <button onclick="replaceText()">Replace</button>
+    <script>
+      function replaceText() {
+        let input = document.getElementById("input-box").value;
+        document.getElementById("hello").innerHTML = input;
+      }
+    </script>
+  </body>
+</html>

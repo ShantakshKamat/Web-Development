@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function addrow() {
+        var table = document.getElementById("mytable");
+        var row = table.insertRow(-1);
+        var num1 = parseInt(
+          document.getElementById(table.rows.length - 2).innerHTML
+        );
+        var num2 = parseInt(
+          document.getElementById(table.rows.length - 3).innerHTML
+        );
+        var sum = num1 + num2;
+        var cell = row.insertCell(0);
+        cell.innerHTML = sum;
+        cell.id = table.rows.length - 1;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="addrow()">Next</button>
+    <table id="mytable">
+      <tr>
+        <td id="0">1</td>
+      </tr>
+      <tr>
+        <td id="1">1</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!-- Create one button and a textbox. On click of the button the
+text written in text box should display on the button.
+(Hint:jQuery val()and html())
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="mytextbox" />
+    <button id="mybutton">Click me</button>
+    <script>
+      $(document).ready(function () {
+        $("#mybutton").click(function () {
+          var text = $("#mytextbox").val(); // get the text from the textbox
+          $(this).html(text); // set the text of the button to the value of the textbox
+        });
+      });
+    </script>
+  </body>
+</html>
